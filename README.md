@@ -1,4 +1,4 @@
-# Form Validation in React :squirrel:
+# Form Validation in React :collision:
 
 A form validation built in ReactJS where the user's email address and password are checked. Here, the form checks email address for it's format i.e. whether the email address is in the intended format where it should be having "@", whereas the password is checked to make sure whether it's having 8 or more characters.
 
