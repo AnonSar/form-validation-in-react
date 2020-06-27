@@ -13,7 +13,7 @@ class Form extends Component {
       emailErr: "",
       password: "",
       passwordErr: "",
-      passowrdConfirmation: "",
+      passwordConfirmation: "",
       passwordConfirmationErr: "",
     };
     this.emailInputHandler = this.emailInputHandler.bind(this);
@@ -69,11 +69,11 @@ class Form extends Component {
 
     // Condition for checking the actual password is not empty and it's same as the confirmation password
     if (
-      this.state.password.length <= 0 &&
-      this.state.password !== this.state.passowrdConfirmation
+      this.state.password.length >= 8 &&
+      this.state.password !== this.state.passwordConfirmation
     ) {
       console.log(this.state.password);
-      console.log(this.state.passowrdConfirmation);
+      console.log(this.state.passwordConfirmation);
       this.setState({
         passwordConfirmationErr:
           "The confirmation password is not the same as the actual password.",
